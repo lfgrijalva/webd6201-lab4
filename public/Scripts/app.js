@@ -1,3 +1,5 @@
+import { displayHome } from "../../server/controllers";
+
 class Contact
 {
     constructor(contactName = "", emailAddress = "", contactNumber = "", contactMessage = "")
@@ -118,6 +120,7 @@ class Contact
             console.log(contactObject);
 
             clearForm();
+            displayHome();
         });
 
         $("#resetButton").click((e)=>

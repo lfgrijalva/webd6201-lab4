@@ -27,7 +27,7 @@ module.exports.displayProducts = (res) =>
 {
   res.render('index',
   {
-    title: 'Products'
+    title: 'Projects'
   });
 }
 

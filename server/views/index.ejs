@@ -1,3 +1,10 @@
+<!-- 
+File name:  index.ejs
+Author:     Luis Grijalva 100719475 
+            Steven Mitchell 100506443
+Date:       4/4/2020 
+-->
+
 <!-- Top Components -->
 <%- include ./partials/head.ejs %>
 <%- include ./partials/header.ejs %>
@@ -6,21 +13,33 @@
 <!-- Content Area -->
 <main class="container" id="mainContent">
 
-<% if (title == 'Home') { %>
+    <% if (title == 'Home') { %>
 
- <%- include ./content/home.ejs %>
+    <%- include ./content/home.ejs %>
 
-<% } else if(title == 'About') { %>
+    <% } else if(title == 'About') { %>
 
-<%- include ./content/about.ejs %>
+    <%- include ./content/about.ejs %>
 
-<% } else if(title == 'Contact') { %>
+    <!-- Added projects page -->
 
-<%- include ./content/contact.ejs %>
+    <% } else if(title == 'Projects') { %>
 
-<% } %>
+    <%- include ./content/projects.ejs %>
 
-</main> 
+    <!-- Added services page -->
+
+    <% } else if(title == 'Services') { %>
+
+    <%- include ./content/services.ejs %>
+
+    <% } else if(title == 'Contact') { %>
+
+    <%- include ./content/contact.ejs %>
+
+    <% } %>
+
+</main>
 
 
 <!-- Bottom components -->

@@ -1,5 +1,7 @@
-import { displayHome } from "../../server/controllers";
-
+// File name:  app.js
+// Author:     Luis Grijalva 100719475 
+//             Steven Mitchell 100506443
+// Date:       4/4/2020 
 class Contact
 {
     constructor(contactName = "", emailAddress = "", contactNumber = "", contactMessage = "")
@@ -101,7 +103,7 @@ class Contact
                 console.log("form not valid");
             }
 
-            
+            e.preventDefault();
             let contactName = $("#contactName").val();
             let emailAddress = $("#emailAddress").val();
             let contactNumber = $("#contactNumber").val();
@@ -112,15 +114,19 @@ class Contact
             console.log(`Contact Number: ${contactNumber}`);
             console.log(`Contact Message: ${contactMessage}`);
 
+            let contactObject = new Contact;
+
             contactObject.contactName = contactName;
             contactObject.emailAddress = emailAddress;
             contactObject.contactNumber = contactNumber;
             contactObject.contactMessage = contactMessage;
 
             console.log(contactObject);
-
+            
             clearForm();
-            displayHome();
+            window.location.replace('./home');
+
+
         });
 
         $("#resetButton").click((e)=>

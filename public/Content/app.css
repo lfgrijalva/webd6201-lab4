@@ -1,3 +1,7 @@
+/* File name:  app.css
+Author:     Luis Grijalva 100719475 
+            Steven Mitchell 100506443
+Date:       4/4/2020  */
 .input-group-addon:first-child
 {
     border-right: 0;
@@ -34,6 +38,7 @@
     border-bottom-left-radius: 0;
 }
 
+/* Added background image */
 .bg {
     /* The image used */
     background-image: url("../Assets/gotham.jpg");
